@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayFit | Coaching sportif en ligne</title>
+    <meta name="description" content="StayFit, des programmes de sport planifiés semaine par semaine, avec un coach.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =====================================================
+         MENU : liens à gauche, logo au centre, bouton à droite
+    ====================================================== -->
+    <header class="header">
+        <nav class="menu">
+            <a href="programmes.html">Programmes</a>
+            <a href="index.html#tarifs">Tarifs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="index.html" class="logo">STAYFIT</a>
+
+        <a href="contact.html" class="bouton bouton-clair bouton-petit header-bouton">S'inscrire</a>
+
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             ACCUEIL : le cadran de chronomètre
+        ====================================================== -->
+        <section class="hero">
+
+            <svg class="cadran" viewBox="0 0 600 600" aria-hidden="true">
+                <!-- Les graduations : des tirets posés en cercle -->
+                <circle class="graduations" cx="300" cy="300" r="280" pathLength="600" />
+                <circle class="graduations-longues" cx="300" cy="300" r="280" pathLength="600" />
+                <circle class="cadran-fond" cx="300" cy="300" r="250" />
+                <circle class="cadran-progression" cx="300" cy="300" r="250" />
+            </svg>
+
+            <div class="hero-contenu">
+                <h1>Entraîne&#8209;toi<br>avec un plan</h1>
+                <p class="hero-texte">
+                    Chaque séance est prévue, chaque exercice est expliqué.
+                    Tu n'as plus qu'à suivre ta semaine.
+                </p>
+                <div class="hero-boutons">
+                    <a href="programmes.html" class="bouton bouton-clair">Choisir mon programme</a>
+                    <a href="#methode" class="bouton bouton-contour-clair">Comment ça marche</a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CHIFFRES (animés en JavaScript)
+        ====================================================== -->
+        <section class="chiffres">
+            <div class="chiffre">
+                <p><span class="compteur" data-cible="6">0</span></p>
+                <span>programmes</span>
+            </div>
+            <div class="chiffre">
+                <p><span class="compteur" data-cible="23">0</span></p>
+                <span>séances détaillées</span>
+            </div>
+            <div class="chiffre">
+                <p><span class="compteur" data-cible="3">0</span></p>
+                <span>coachs</span>
+            </div>
+            <div class="chiffre">
+                <p><span class="compteur" data-cible="20">0</span> min</p>
+                <span>pour la plus courte</span>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             LA MÉTHODE : 3 étapes dans l'ordre
+        ====================================================== -->
+        <section class="section" id="methode">
+            <h2 class="titre-section">Trois étapes, c'est tout</h2>
+
+            <ol class="etapes">
+                <li class="etape">
+                    <span class="etape-numero">1</span>
+                    <h3>Choisis ton objectif</h3>
+                    <p>Perdre du poids, prendre du muscle ou te détendre : chaque programme a un but précis.</p>
+                </li>
+                <li class="etape">
+                    <span class="etape-numero">2</span>
+                    <h3>Suis ta semaine</h3>
+                    <p>Ton planning te dit quoi faire chaque jour, avec les séries, les répétitions et les temps de repos.</p>
+                </li>
+                <li class="etape">
+                    <span class="etape-numero">3</span>
+                    <h3>Progresse avec ton coach</h3>
+                    <p>Toutes les deux semaines, ton coach ajuste le programme selon tes résultats.</p>
+                </li>
+            </ol>
+        </section>
+
+
+        <!-- =====================================================
+             PROGRAMMES (3 mis en avant)
+        ====================================================== -->
+        <section class="section section-craie">
+            <h2 class="titre-section">Choisis ton objectif</h2>
+
+            <div class="grille">
+                <a href="programme-perte.html" class="carte" data-categorie="cardio">
+                    <div class="carte-image" style="--img: url('images/programme-perte.jpg')"></div>
+                    <div class="carte-contenu">
+                        <p class="carte-meta">Cardio, 8 semaines</p>
+                        <h3>Perte de poids</h3>
+                        <p>Bouger plus, brûler plus, sans t'épuiser. Un plan de 8 semaines pour perdre du poids durablement.</p>
+                        <span class="lien">Voir le programme</span>
+                    </div>
+                </a>
+                <a href="programme-muscle.html" class="carte" data-categorie="musculation">
+                    <div class="carte-image" style="--img: url('images/programme-muscle.jpg')"></div>
+                    <div class="carte-contenu">
+                        <p class="carte-meta">Musculation, 12 semaines</p>
+                        <h3>Prise de muscle</h3>
+                        <p>Douze semaines en salle pour gagner en force et en volume, avec une technique propre.</p>
+                        <span class="lien">Voir le programme</span>
+                    </div>
+                </a>
+                <a href="programme-forme.html" class="carte" data-categorie="yoga">
+                    <div class="carte-image" style="--img: url('images/programme-forme.jpg')"></div>
+                    <div class="carte-contenu">
+                        <p class="carte-meta">Yoga, 6 semaines</p>
+                        <h3>Remise en forme douce</h3>
+                        <p>Reprendre le sport sans se faire mal. Six semaines pour retrouver de l'énergie et de la souplesse.</p>
+                        <span class="lien">Voir le programme</span>
+                    </div>
+                </a>
+            </div>
+
+            <a href="programmes.html" class="bouton bouton-centre">Voir les 6 programmes</a>
+        </section>
+
+
+        <!-- =====================================================
+             COACHS
+        ====================================================== -->
+        <section class="section">
+            <h2 class="titre-section">Tes coachs</h2>
+
+            <div class="grille grille-coachs">
+                <div class="coach">
+                    <div class="coach-photo" style="--img: url('images/coach-1.jpg')"></div>
+                    <h3>Sarah Benali</h3>
+                    <p>Cardio et perte de poids</p>
+                </div>
+                <div class="coach">
+                    <div class="coach-photo" style="--img: url('images/coach-2.jpg')"></div>
+                    <h3>Karim Idrissi</h3>
+                    <p>Musculation et force</p>
+                </div>
+                <div class="coach">
+                    <div class="coach-photo" style="--img: url('images/coach-3.jpg')"></div>
+                    <h3>Léa Martin</h3>
+                    <p>Yoga et mobilité</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             TARIFS
+        ====================================================== -->
+        <section class="section section-craie" id="tarifs">
+            <h2 class="titre-section">Une formule pour chacun</h2>
+
+            <div class="grille">
+
+                <div class="tarif">
+                    <h3>Débutant</h3>
+                    <p class="prix">19 €<span> par mois</span></p>
+                    <ul>
+                        <li>1 programme au choix</li>
+                        <li>Un bilan par mois</li>
+                        <li>Accès à la communauté</li>
+                    </ul>
+                    <a href="contact.html" class="bouton bouton-contour">Choisir Débutant</a>
+                </div>
+
+                <div class="tarif tarif-vedette">
+                    <p class="etiquette">La plus choisie</p>
+                    <h3>Intermédiaire</h3>
+                    <p class="prix">39 €<span> par mois</span></p>
+                    <ul>
+                        <li>Tous les programmes</li>
+                        <li>Un bilan toutes les deux semaines</li>
+                        <li>Conseils alimentaires</li>
+                    </ul>
+                    <a href="contact.html" class="bouton bouton-clair">Choisir Intermédiaire</a>
+                </div>
+
+                <div class="tarif">
+                    <h3>Premium</h3>
+                    <p class="prix">69 €<span> par mois</span></p>
+                    <ul>
+                        <li>Un coach rien que pour toi</li>
+                        <li>Séances en visio</li>
+                        <li>Plan alimentaire sur mesure</li>
+                    </ul>
+                    <a href="contact.html" class="bouton bouton-contour">Choisir Premium</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             APPEL À L'ACTION
+        ====================================================== -->
+        <section class="appel">
+            <h2>Ta première semaine est offerte</h2>
+            <p>Sans engagement. Tu arrêtes quand tu veux.</p>
+            <a href="contact.html" class="bouton bouton-clair">Commencer gratuitement</a>
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         BAS DE PAGE
+    ====================================================== -->
+    <footer class="footer">
+        <a href="index.html" class="logo">STAYFIT</a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>© <span class="annee"></span> StayFit, projet de démonstration réalisé par Yasser Tabya.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
